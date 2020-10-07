@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "917632138142",
+    "firebase_url": "https://pushnotification-a689e.firebaseio.com",
+    "project_id": "pushnotification-a689e",
+    "storage_bucket": "pushnotification-a689e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917632138142:android:cc56ac5bc004a64906b48f",
+        "android_client_info": {
+          "package_name": "com.contactchecker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917632138142-cie82ou866pm0a9fp9rq1fpbu4ohhffq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDupD6aAhgpxb6nkQJt5OhBqIm7Px94MOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917632138142-cie82ou866pm0a9fp9rq1fpbu4ohhffq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
