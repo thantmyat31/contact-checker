@@ -17,6 +17,7 @@ const ContactsListItem = ({item}) => {
 
   const iconLink =
     'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/512px-Google_Contacts_icon.svg.png';
+
   return (
     <TouchableWithoutFeedback onPress={handleOnPress}>
       <View style={styles.container}>
@@ -54,7 +55,7 @@ const styles = StyleSheet.create({
   },
   row: {flexDirection: 'row', alignItems: 'center'},
   image: {width: 50, height: 50, borderRadius: 25},
-  name: {fontSize: 20, marginLeft: 10},
+  name: {fontSize: 16, marginLeft: 10},
 });
 
 export default ContactsListItem;

@@ -3,7 +3,7 @@ import {PermissionsAndroid} from 'react-native';
 import Contacts from 'react-native-contacts';
 
 export const useGetAll = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
   const getAll = async () => {
     try {
