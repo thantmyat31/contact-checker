@@ -4,15 +4,13 @@ import {
   Text,
   StyleSheet,
   TouchableWithoutFeedback,
-  Button,
   Image,
 } from 'react-native';
 
 const ContactsListItem = ({item}) => {
-  const [showDetails, setShowDetails] = useState(false);
 
   const handleOnPress = () => {
-    setShowDetails(!showDetails);
+    alert('handleOnPress');
   };
 
   const iconLink =
@@ -30,16 +28,6 @@ const ContactsListItem = ({item}) => {
           />
           <Text style={styles.name}>{item.displayName}</Text>
         </View>
-        {showDetails && (
-          <View>
-            {item.phoneNumbers.map((pn) => (
-              <View style={styles.row}>
-                <Text>{pn.label.toUpperCase()}</Text>
-                <Text>{pn.number}</Text>
-              </View>
-            ))}
-          </View>
-        )}
       </View>
     </TouchableWithoutFeedback>
   );
