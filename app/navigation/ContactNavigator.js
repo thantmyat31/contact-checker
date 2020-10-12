@@ -9,8 +9,8 @@ const Stack = createStackNavigator();
 const ContactNavigator = () => {
     return ( 
         <Stack.Navigator>
-            <Stack.Screen name="Contacts" component={ContactsScreen} />
-            <Stack.Screen name="ContactsDetails" component={ContactDetailsScreen} />
+            <Stack.Screen name="Contacts" component={ContactsScreen} options={{ headerShown: false }} />
+            <Stack.Screen name="ContactDetails" component={ContactDetailsScreen} />
         </Stack.Navigator>
     );
 }

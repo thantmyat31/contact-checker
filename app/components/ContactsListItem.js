@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   View,
   Text,
@@ -7,10 +7,14 @@ import {
   Image,
 } from 'react-native';
 
-const ContactsListItem = ({item}) => {
+import { useNavigation } from '@react-navigation/native';
+import routes from '../navigation/routes';
+
+const ContactsListItem = ({ item }) => {
+  const navigation = useNavigation();
 
   const handleOnPress = () => {
-    alert('handleOnPress');
+    navigation.navigate(routes.CONTACT_DETAILS);
   };
 
   const iconLink =

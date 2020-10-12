@@ -6,13 +6,12 @@
  * @flow strict-local
  */
 
-// import 'react-native-gesture-handler';
+import 'react-native-gesture-handler';
 import React from 'react';
 
-// import { NavigationContainer } from '@react-navigation/native';
-// import ContactNavigator from './app/navigation/ContactNavigator';
+import { NavigationContainer } from '@react-navigation/native';
+import ContactNavigator from './app/navigation/ContactNavigator';
 
-import ContactsList from './app/components/ContactsList';
 import useFCMServices from './app/hooks/firebase/useFCMServices';
 
 const App = () => {
@@ -20,10 +19,9 @@ const App = () => {
 
   return (
     <>
-      {/*<NavigationContainer>
+      <NavigationContainer>
         <ContactNavigator />
-      </NavigationContainer>*/}
-      <ContactsList />
+      </NavigationContainer>
     </>
   );
 };
