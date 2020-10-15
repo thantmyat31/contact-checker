@@ -14,11 +14,8 @@ const ContactsListItem = ({ item }) => {
   const navigation = useNavigation();
 
   const handleOnPress = () => {
-    navigation.navigate(routes.CONTACT_DETAILS);
+    navigation.navigate(routes.CONTACT_DETAILS, { item });
   };
-
-  const iconLink =
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/512px-Google_Contacts_icon.svg.png';
 
   return (
     <TouchableWithoutFeedback onPress={handleOnPress}>
@@ -26,9 +23,11 @@ const ContactsListItem = ({ item }) => {
         <View style={[styles.row]}>
           <Image
             style={styles.image}
-            source={{
-              uri: item.thumbnailPath ? item.thumbnailPath : iconLink,
-            }}
+            source={
+              !item.thumbnailPath ? 
+              require('./../assets/image/icon.png') : 
+              { uri: item.thumbnailPath }
+          }
           />
           <Text style={styles.name}>{item.displayName}</Text>
         </View>
