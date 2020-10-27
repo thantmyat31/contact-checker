@@ -6,6 +6,7 @@ import {
   StatusBar,
   View,
 } from 'react-native';
+import colors from '../config/colors';
 
 const Screen = ({children, style}) => {
   return (
@@ -18,6 +19,7 @@ const Screen = ({children, style}) => {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
+    backgroundColor: colors.white
     // paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
   },
   view: {

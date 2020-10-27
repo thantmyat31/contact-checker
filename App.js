@@ -13,6 +13,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import ContactNavigator from './app/navigation/ContactNavigator';
 
 import useFCMServices from './app/hooks/firebase/useFCMServices';
+import ContactCheckerNavigator from './app/navigation/ContactCheckerNavigator';
 
 const App = () => {
   useFCMServices();
@@ -20,7 +21,7 @@ const App = () => {
   return (
     <>
       <NavigationContainer>
-        <ContactNavigator />
+        <ContactCheckerNavigator />
       </NavigationContainer>
     </>
   );
